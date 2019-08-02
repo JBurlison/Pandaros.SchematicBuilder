@@ -1,0 +1,7281 @@
+{
+  "Pandaros.SchematicBuilder.BerryPancakes": {
+    "Name": "Pandaros.SchematicBuilder.BerryPancakes",
+    "icon": "./icons/BerryPancakes.png",
+    "isPlaceable": false,
+    "foodValue": 0.4,
+    "happiness": 15.0,
+    "dailyFoodFractionOptimal": 0.5,
+    "categories": [ "food" ]
+  },
+  "Pandaros.SchematicBuilder.BerryPie": {
+    "Name": "Pandaros.SchematicBuilder.BerryPie",
+    "icon": "./icons/BerryPie.png",
+    "isPlaceable": false,
+    "foodValue": 0.6,
+    "happiness": 18.0,
+    "dailyFoodFractionOptimal": 0.5,
+    "categories": [ "food" ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sappling": {
+    "categories": [
+      "decorative"
+    ],
+    "colliders": {
+      "boxes": [
+        {
+          "max": [ 0.25, 0, 0.25 ],
+          "min": [ -0.25, -0.5, -0.25 ]
+        }
+      ],
+      "collidePlayer": false
+    },
+    "customData": {
+      "colors": [ "#ff0000->#542909", "#00ff00->#0e6306" ]
+    },
+    "icon": "./icons/sapling.png",
+    "isSolid": false,
+    "mesh": "./Meshes/sapling.ply",
+    "needsBase": true,
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "grassDelete",
+    "sideall": "neutral"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.infinatemarble": {
+    "sideall": "Pandaros.SchematicBuilder.AutoLoad.rawmarble",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "onPlaceAudio": "stonePlace",
+    "onRemoveType": "Pandaros.SchematicBuilder.AutoLoad.rawmarble",
+    "onRemoveAudio": "stoneDelete",
+    "destructionTime": 2000,
+    "icon": "./icons/rawMarble.png",
+    "customData": {
+      "minerIsMineable": true,
+      "minerMiningTime": 5
+    },
+    "categories": [
+      "ore"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawmarble": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/rawMarble.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "categories": [
+      "decorative",
+      "marble"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawruby": {
+    "icon": "./icons/rawruby.png",
+    "isPlaceable": false,
+    "categories": [
+      "ingredient",
+      "raw"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawsapphire": {
+    "icon": "./icons/rawsapphire.png",
+    "isPlaceable": false,
+    "categories": [
+      "ingredient",
+      "raw"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marble": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/Marble.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "categories": [
+      "decorative",
+      "marble"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.refinedsapphire": {
+    "icon": "./icons/refinedsapphire.png",
+    "isPlaceable": false,
+    "categories": [
+      "ingredient"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.refinedruby": {
+    "icon": "./icons/refinedruby.png",
+    "isPlaceable": false,
+    "categories": [
+      "ingredient"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.refinedemerald": {
+    "icon": "./icons/refinedemerald.png",
+    "maxStackSize": 600,
+    "isPlaceable": false,
+    "categories": [
+      "ingredient"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawemerald": {
+    "icon": "./icons/rawemerald.png",
+    "maxStackSize": 600,
+    "isPlaceable": false,
+    "categories": [
+      "ingredient",
+      "raw"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.infiniteemerald": {
+    "icon": "./icons/infiniteemerald.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveType": "Pandaros.SchematicBuilder.AutoLoad.rawemerald",
+    "onRemoveAudio": "stoneDelete",
+    "destructionTime": 2000,
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isDestructible": true,
+    "customData": {
+      "minerIsMineable": true,
+      "minerMiningTime": 5
+    },
+    "categories": [
+      "ore"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.chisel": {
+    "icon": "./icons/chisel.png",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isPlaceable": false,
+    "categories": [
+      "ingredient"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blueclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/blueClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.magentaclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/magentaClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.yellowclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/yellowClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightpinkclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/lightpinkClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/redClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.orangeclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/orangeClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/blackClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brownclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/brownClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cyanclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/cyanClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.darkblueclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/darkblueClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greyclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/greyClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightgreyclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/lightgreyClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greenclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/greenClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limeclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/limeClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.pinkclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/pinkClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.purpleclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/purpleClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.whiteclay": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/whiteClay.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limestone": {
+    "icon": "./icons/limeStone.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "destructionTime": 600,
+    "categories": [
+      "decorative",
+      "stone"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandstone": {
+    "icon": "./icons/sandStone.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "destructionTime": 600,
+    "categories": [
+      "decorative",
+      "stone"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.infiniteruby": {
+    "icon": "./icons/infiniteruby.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveType": "Pandaros.SchematicBuilder.AutoLoad.rawruby",
+    "onRemoveAudio": "stoneDelete",
+    "destructionTime": 2000,
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isDestructible": true,
+    "customData": {
+      "minerIsMineable": true,
+      "minerMiningTime": 5
+    },
+    "categories": [
+      "ore"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.infinitesapphire": {
+    "icon": "./icons/infinitesapphire.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveType": "Pandaros.SchematicBuilder.AutoLoad.rawsapphire",
+    "onRemoveAudio": "stoneDelete",
+    "destructionTime": 2000,
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isDestructible": true,
+    "customData": {
+      "minerIsMineable": true,
+      "minerMiningTime": 5
+    },
+    "categories": [
+      "ore"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbar": {
+    "icon": "./icons/ironbar.png",
+    "onPlaceAudio": "Pandaros.SchematicBuilder.Metal",
+    "onRemoveAudio": "Pandaros.SchematicBuilder.MetalRemove",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.ironbarx-",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.ironbarx+",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.ironbarz-",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.ironbarz+",
+    "categories": [
+      "decorative",
+      "iron"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbarx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.ironbar",
+    "mesh": "./Meshes/ironbarx+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ -0.4, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbarx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.ironbar",
+    "mesh": "./Meshes/ironbarx-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0.4, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbarz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.ironbar",
+    "mesh": "./Meshes/ironbarz+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, -0.4 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbarz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.ironbar",
+    "mesh": "./Meshes/ironbarz-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0.4 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbarcorner": {
+    "icon": "./icons/ironbarcorner.png",
+    "onPlaceAudio": "Pandaros.SchematicBuilder.Metal",
+    "onRemoveAudio": "Pandaros.SchematicBuilder.MetalRemove",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.ironbarcornerx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.ironbarcornerx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.ironbarcornerz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.ironbarcornerz-",
+    "categories": [
+      "decorative",
+      "iron"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbarcornerx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.ironbarcorner",
+    "mesh": "./Meshes/ironbarcornerx+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ -0.4, 0.5, 0.5 ]
+        },
+        {
+          "min": [ -0.5, -0.5, 0.4 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbarcornerx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.ironbarcorner",
+    "mesh": "./Meshes/ironbarcornerx-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0.4, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        },
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, -0.4 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbarcornerz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.ironbarcorner",
+    "mesh": "./Meshes/ironbarcornerz+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, -0.4 ]
+        },
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ -0.4, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.ironbarcornerz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.ironbarcorner",
+    "mesh": "./Meshes/ironbarcornerz-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0.4 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        },
+        {
+          "min": [ 0.4, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.irondoor": {
+    "onPlaceAudio": "Pandaros.SchematicBuilder.Metal",
+    "icon": "./icons/irondoor.png",
+    "onRemoveAudio": "Pandaros.SchematicBuilder.MetalRemove",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.irondoorx-",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.irondoorx+",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.irondoorz-",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.irondoorz+",
+    "categories": [
+      "decorative",
+      "iron",
+      "door"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.irondoorx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.irondoor",
+    "mesh": "./Meshes/irondoorx+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ -0.4, 1.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.irondoorx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.irondoor",
+    "mesh": "./Meshes/irondoorx-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0.4, -0.5, -0.5 ],
+          "max": [ 0.5, 1.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.irondoorz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.irondoor",
+    "mesh": "./Meshes/irondoorz+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 1.5, -0.4 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.irondoorz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.irondoor",
+    "mesh": "./Meshes/irondoorz-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0.4 ],
+          "max": [ 0.5, 1.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblepillarbase": {
+    "icon": "./icons/marblepillarbase.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/Marblepillarbase.obj",
+    "categories": [
+      "decorative",
+      "marble"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblepillarbody": {
+    "icon": "./icons/marblepillarbody.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/Marblepillarbody.obj",
+    "categories": [
+      "decorative",
+      "marble"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblepillartop": {
+    "icon": "./icons/marblepillartop.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/Marblepillartop.obj",
+    "categories": [
+      "decorative",
+      "marble"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.chalk": {
+    "icon": "./icons/chalk.png",
+    "isPlaceable": false,
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "categories": [
+      "ingredient"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.notwater": {
+    "isSolid": true,
+    "onPlaceAudio": "waterSplashFeet",
+    "onRemoveAudio": "waterSplashFeet",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/water.png",
+    "isPlaceable": true,
+    "categories": [
+      "decorative",
+      "water"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.knife": {
+    "icon": "./icons/Knife.png",
+    "isPlaceable": false,
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "categories": [
+      "ingredient"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.glass": {
+    "icon": "./icons/Glass.png",
+    "isPlaceable": false,
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "categories": [
+      "decorative",
+      "glass"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sledgehammer": {
+    "icon": "./icons/Sledgehammer.png",
+    "isPlaceable": false,
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "categories": [
+      "ingredient"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.saw": {
+    "icon": "./icons/Saw.png",
+    "isPlaceable": false,
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "categories": [
+      "ingredient"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtbricks": {
+    "isFertile": true,
+    "icon": "./icons/dirtbricks.png",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "onRemoveAudio": "grassDelete",
+    "onPlaceAudio": "dirtPlace",
+    "categories": [
+      "decorative",
+      "dirt"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblebricks": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/marbleBrick.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "categories": [
+      "decorative",
+      "marble"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.fence": {
+    "icon": "./icons/woodfence.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.woodfencex+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.woodfencex-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.woodfencez+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.woodfencez-",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodfencex+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.fence",
+    "mesh": "./Meshes/woodfencex+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0.4, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodfencex-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.fence",
+    "mesh": "./Meshes/woodfencex-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ -0.4, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodfencez+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.fence",
+    "mesh": "./Meshes/woodfencez+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0.4 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodfencez-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.fence",
+    "mesh": "./Meshes/woodfencez-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, -0.4 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.fencecorner": {
+    "icon": "./icons/woodfencecorner.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.woodfencecornerx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.woodfencecornerx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.woodfencecornerz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.woodfencecornerz-",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodfencecornerx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.fencecorner",
+    "mesh": "./Meshes/woodfencecornerx+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0.4, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        },
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, -0.4 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodfencecornerx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.fencecorner",
+    "mesh": "./Meshes/woodfencecornerx-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ -0.4, 0.5, 0.5 ]
+        },
+        {
+          "min": [ -0.5, -0.5, 0.4 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodfencecornerz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.fencecorner",
+    "mesh": "./Meshes/woodfencecornerz+.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0.4 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        },
+        {
+          "min": [ 0.4, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodfencecornerz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.fencecorner",
+    "mesh": "./Meshes/woodfencecornerz-.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, -0.4 ]
+        },
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ -0.4, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.window": {
+    "icon": "./icons/window.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.windowx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.windowx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.windowz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.windowz-",
+    "categories": [
+      "decorative",
+      "glass"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.windowx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.window",
+    "mesh": "./Meshes/windowx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.windowx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.window",
+    "mesh": "./Meshes/windowx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.windowz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.window",
+    "mesh": "./Meshes/windowz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.windowz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.window",
+    "mesh": "./Meshes/windowz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.doublewindow": {
+    "icon": "./icons/window.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.doublewindowx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.doublewindowx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.doublewindowz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.doublewindowz-",
+    "categories": [
+      "decorative",
+      "glass"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.doublewindowx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.doublewindow",
+    "mesh": "./Meshes/windowtwowayx.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.doublewindowx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.doublewindow",
+    "mesh": "./Meshes/windowtwowayx.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.doublewindowz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.doublewindow",
+    "mesh": "./Meshes/windowtwowayz.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.doublewindowz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.doublewindow",
+    "mesh": "./Meshes/windowtwowayz.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupport": {
+    "icon": "./icons/woodsupport.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.woodsupportx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.woodsupportx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.woodsupportz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.woodsupportz-",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodsupport",
+    "mesh": "./Meshes/woodsupportx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodsupport",
+    "mesh": "./Meshes/woodsupportx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodsupport",
+    "mesh": "./Meshes/woodsupportz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodsupport",
+    "mesh": "./Meshes/woodsupportz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportud": {
+    "icon": "./icons/woodsupportud.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.woodsupportudx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.woodsupportudx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.woodsupportudz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.woodsupportudz-",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportudx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodsupportud",
+    "mesh": "./Meshes/woodsupportudx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportudx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodsupportud",
+    "mesh": "./Meshes/woodsupportudx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportudz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodsupportud",
+    "mesh": "./Meshes/woodsupportudz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportudz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodsupportud",
+    "mesh": "./Meshes/woodsupportudz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodsupportcube": {
+    "icon": "./icons/woodsupportcube.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/woodsupportcube.obj",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbanner": {
+    "icon": "./icons/hangingbanner.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isSolid": false,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerz-",
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbanner",
+    "mesh": "./Meshes/hangingbannerx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbanner",
+    "mesh": "./Meshes/hangingbannerx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbanner",
+    "mesh": "./Meshes/hangingbannerz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbanner",
+    "mesh": "./Meshes/hangingbannerz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrw": {
+    "icon": "./icons/hangingbannerrw.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isSolid": false,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrwx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrwx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrwz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrwz-",
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrwx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrw",
+    "mesh": "./Meshes/hangingbannerx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrwx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrw",
+    "mesh": "./Meshes/hangingbannerx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrwz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrw",
+    "mesh": "./Meshes/hangingbannerz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrwz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerrw",
+    "mesh": "./Meshes/hangingbannerz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw": {
+    "icon": "./icons/hangingbannerbw.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isSolid": false,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbwx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbwx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbwz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbwz-",
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbwx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw",
+    "mesh": "./Meshes/hangingbannerx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbwx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw",
+    "mesh": "./Meshes/hangingbannerx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbwz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw",
+    "mesh": "./Meshes/hangingbannerz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbwz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw",
+    "mesh": "./Meshes/hangingbannerz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannercb": {
+    "icon": "./icons/hangingbannercb.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isSolid": false,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannercbx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannercbx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannercbz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannercbz-",
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannercbx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannercb",
+    "mesh": "./Meshes/hangingbannerx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannercbx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannercb",
+    "mesh": "./Meshes/hangingbannerx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannercbz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannercb",
+    "mesh": "./Meshes/hangingbannerz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannercbz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannercb",
+    "mesh": "./Meshes/hangingbannerz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2": {
+    "icon": "./icons/hangingbannerbw2.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isSolid": false,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2x+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2x-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2z+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2z-",
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2x+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2",
+    "mesh": "./Meshes/hangingbannerx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2x-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2",
+    "mesh": "./Meshes/hangingbannerx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2z+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2",
+    "mesh": "./Meshes/hangingbannerz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2z-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.hangingbannerbw2",
+    "mesh": "./Meshes/hangingbannerz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.simplechair": {
+    "icon": "./icons/simplechair.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isSolid": false,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.simplechairx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.simplechairx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.simplechairz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.simplechairz-",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.simplechairx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.simplechair",
+    "mesh": "./Meshes/simplechairx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.simplechairx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.simplechair",
+    "mesh": "./Meshes/simplechairx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.simplechairz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.simplechair",
+    "mesh": "./Meshes/simplechairz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.simplechairz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.simplechair",
+    "mesh": "./Meshes/simplechairz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.simpletable": {
+    "icon": "./icons/simpletable.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/simpletable.obj",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodencatwalk": {
+    "icon": "./icons/woodencatwalk.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.woodencatwalkx",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.woodencatwalkx",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.woodencatwalkz",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.woodencatwalkz",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodencatwalkx": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodencatwalk",
+    "mesh": "./Meshes/woodencatwalkx.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodencatwalkz": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodencatwalk",
+    "mesh": "./Meshes/woodencatwalkz.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodbarrel": {
+    "icon": "./icons/woodbarrel.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.woodbarrelx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.woodbarrelx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.woodbarrelz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.woodbarrelz-",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodbarrelx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodbarrel",
+    "mesh": "./Meshes/woodbarrelx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodbarrelx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodbarrel",
+    "mesh": "./Meshes/woodbarrelx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodbarrelz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodbarrel",
+    "mesh": "./Meshes/woodbarrelz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.woodbarrelz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.woodbarrel",
+    "mesh": "./Meshes/woodbarrelz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cratestack": {
+    "icon": "./icons/cratestack.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isRotatable": true,
+    "rotatablex+": "Pandaros.SchematicBuilder.AutoLoad.cratestackx+",
+    "rotatablex-": "Pandaros.SchematicBuilder.AutoLoad.cratestackx-",
+    "rotatablez+": "Pandaros.SchematicBuilder.AutoLoad.cratestackz+",
+    "rotatablez-": "Pandaros.SchematicBuilder.AutoLoad.cratestackz-",
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cratestackx+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cratestack",
+    "mesh": "./Meshes/cratestackx+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cratestackx-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cratestack",
+    "mesh": "./Meshes/cratestackx-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cratestackz+": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cratestack",
+    "mesh": "./Meshes/cratestackz+.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cratestackz-": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cratestack",
+    "mesh": "./Meshes/cratestackz-.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonebrickslab": {
+    "icon": "./icons/stonebrickslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonebrickslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonebrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonebrickslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonebrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonebrickslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonebrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonebrickslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonebrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonebrickslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonebrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonebrickslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonebrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plankslab": {
+    "icon": "./icons/plankslab.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plankslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plankslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plankslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plankslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plankslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plankslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj",
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brickslab": {
+    "icon": "./icons/brickslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brickslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brickslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brickslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brickslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brickslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brickslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.coatedplankslab": {
+    "icon": "./icons/coatedplankslab.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.coatedplankslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.coatedplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.coatedplankslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.coatedplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.coatedplankslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.coatedplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.coatedplankslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.coatedplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.coatedplankslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.coatedplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.coatedplankslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.coatedplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslab": {
+    "icon": "./icons/cherryblossomslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cherryblossomslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslab": {
+    "icon": "./icons/leavestemperateslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "leaves"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslab": {
+    "icon": "./icons/leavestaigaslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "leaves"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.leavestaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.waterslab": {
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "icon": "./icons/waterslab.png",
+    "onPlaceAudio": "waterSplashFeet",
+    "onRemoveAudio": "waterSplashFeet",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "categories": [
+      "decorative",
+      "water"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.waterslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.waterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.waterslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.waterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.waterslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.waterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.waterslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.waterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.waterslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.waterslab",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.waterslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.waterslab",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/slabbottom.obj",
+    "categories": [
+      "decorative",
+      "water"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.adobeslab": {
+    "icon": "./icons/adobeslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "dirt"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.adobeslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.adobeslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.adobeslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.adobeslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.adobeslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.adobeslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.adobeslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.adobeslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.adobeslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.adobeslab",
+    "sideall": "SELF",
+    "isFertile": true,
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.adobeslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.adobeslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.strawslab": {
+    "icon": "./icons/strawslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.strawslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.strawslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.strawslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.strawslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.strawslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.strawslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.strawslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.strawslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.strawslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.strawslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.strawslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.strawslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.berrybushslab": {
+    "icon": "./icons/berrybushslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.berrybushslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.berrybushslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.berrybushslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.berrybushslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.berrybushslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.berrybushslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.berrybushslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.berrybushslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.berrybushslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.berrybushslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.berrybushslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.berrybushslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.snowslab": {
+    "icon": "./icons/snowslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.snowslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.snowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.snowslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.snowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.snowslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.snowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.snowslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.snowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.snowslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.snowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.snowslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.snowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandslab": {
+    "icon": "./icons/sandslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandslabtop": {
+    "icon": "./icons/sandslab.png",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandslabbottom": {
+    "icon": "./icons/sandslab.png",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtslab": {
+    "icon": "./icons/dirtslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "dirt"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtslab",
+    "isFertile": true,
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslab": {
+    "icon": "./icons/yellowcarpetslab.png",
+    "onPlaceAudio": "carpetyellowPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetyellowslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetblueslab": {
+    "icon": "./icons/bluecarpetslab.png",
+    "onPlaceAudio": "carpetbluePlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetblueslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetblueslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetblueslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetblueslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetblueslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetblueslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetblueslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetblueslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetblueslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetblueslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetblueslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetblueslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetredslab": {
+    "icon": "./icons/redcarpetslab.png",
+    "onPlaceAudio": "carpetredPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetredslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetredslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetredslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetredslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetredslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetredslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetredslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetredslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetredslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetredslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.carpetredslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.carpetredslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stoneblockslab": {
+    "icon": "./icons/stoneblockslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stoneblockslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stoneblockslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stoneblockslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stoneblockslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stoneblockslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stoneblockslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stoneblockslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stoneblockslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stoneblockslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stoneblockslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stoneblockslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stoneblockslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslab": {
+    "icon": "./icons/dirtbrickslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "dirt"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslab",
+    "isFertile": true,
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.dirtbrickslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtaigaslab": {
+    "icon": "./icons/logtaigaslab.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtaigaslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtaigaslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtaigaslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtaigaslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtaigaslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtaigaslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtaigaslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtemperateslab": {
+    "icon": "./icons/logtemperateslab.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtemperateslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtemperateslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtemperateslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtemperateslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtemperateslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.logtemperateslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.logtemperateslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandstoneslab": {
+    "icon": "./icons/sandstoneslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandstoneslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandstoneslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandstoneslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandstoneslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandstoneslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandstoneslab",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.sandstoneslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.sandstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limestoneslab": {
+    "icon": "./icons/limestoneslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limestoneslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limestoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limestoneslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limestoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limestoneslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limestoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limestoneslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limestoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limestoneslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limestoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limestoneslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limestoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marbleslab": {
+    "icon": "./icons/marbleslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marbleslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marbleslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marbleslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marbleslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marbleslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marbleslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslab": {
+    "icon": "./icons/rawmarbleslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "marble"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.rawmarbleslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblebricksslab": {
+    "icon": "./icons/marblebricksslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "marble"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblebricksslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marblebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblebricksslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marblebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblebricksslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marblebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblebricksslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marblebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblebricksslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marblebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.marblebricksslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.marblebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslab": {
+    "icon": "./icons/stonesquaresslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.stonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonesquares": {
+    "icon": "./icons/mossStoneSquares.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.stonesquares": {
+    "icon": "./icons/stoneSquares.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslab": {
+    "icon": "./icons/mossstonesquaresslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonesquaresslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslab": {
+    "icon": "./icons/mossstonebricksslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstoneslab": {
+    "icon": "./icons/mossstoneslab.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstoneslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstoneslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstoneslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstoneslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstoneslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstoneslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstoneslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.mossstonebricksslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstone": {
+    "icon": "./icons/mossStone.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.mossstonebricks": {
+    "icon": "./icons/mossStoneBricks.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "categories": [
+      "decorative",
+      "bricks"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plasterslab": {
+    "icon": "./icons/plasterslab.png",
+    "onRemoveAudio": "dirtPlace",
+    "onPlaceAudio": "dirtPlace",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plasterslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plasterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plasterslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plasterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plasterslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plasterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plasterslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plasterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plasterslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plasterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.plasterslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.plasterslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.clayslab": {
+    "icon": "./icons/clayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.clayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.clayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.clayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.clayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.clayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.clayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.clayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.clayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.clayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.clayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.clayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.clayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redplankslab": {
+    "icon": "./icons/redplankslab.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redplankslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redplankslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redplankslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redplankslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redplankslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redplankslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackplankslab": {
+    "icon": "./icons/blackplankslab.png",
+    "onPlaceAudio": "woodPlace",
+    "onRemoveAudio": "woodDeleteLight",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "wood"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackplankslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackplankslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackplankslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackplankslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackplankslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackplankslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackplankslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.whiteclayslab": {
+    "icon": "./icons/whiteclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.whiteclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.whiteclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.whiteclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.whiteclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.whiteclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.whiteclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.whiteclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.whiteclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.whiteclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.whiteclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.whiteclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.whiteclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.yellowclayslab": {
+    "icon": "./icons/yellowclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.yellowclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.yellowclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.yellowclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.yellowclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.yellowclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.yellowclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.yellowclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.yellowclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.yellowclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.yellowclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.yellowclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.yellowclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.orangeclayslab": {
+    "icon": "./icons/orangeclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.orangeclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.orangeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.orangeclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.orangeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.orangeclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.orangeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.orangeclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.orangeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.orangeclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.orangeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.orangeclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.orangeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.magentaclayslab": {
+    "icon": "./icons/magentaclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.magentaclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.magentaclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.magentaclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.magentaclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.magentaclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.magentaclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.magentaclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.magentaclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.magentaclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.magentaclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.magentaclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.magentaclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.purpleclayslab": {
+    "icon": "./icons/purpleclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.purpleclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.purpleclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.purpleclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.purpleclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.purpleclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.purpleclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.purpleclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.purpleclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.purpleclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.purpleclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.purpleclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.purpleclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redclayslab": {
+    "icon": "./icons/redclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.redclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.redclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslab": {
+    "icon": "./icons/lightpinkclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightpinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.pinkclayslab": {
+    "icon": "./icons/pinkclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.pinkclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.pinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.pinkclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.pinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.pinkclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.pinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.pinkclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.pinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.pinkclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.pinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.pinkclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.pinkclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limeclayslab": {
+    "icon": "./icons/limeclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limeclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limeclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limeclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limeclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limeclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.limeclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.limeclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greenclayslab": {
+    "icon": "./icons/greenclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greenclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greenclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greenclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greenclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greenclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greenclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greenclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greenclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greenclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greenclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greenclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greenclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslab": {
+    "icon": "./icons/lightgreyclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lightgreyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greyclayslab": {
+    "icon": "./icons/greyclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greyclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greyclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greyclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greyclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greyclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.greyclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.greyclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslab": {
+    "icon": "./icons/darkblueclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.darkblueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cyanclayslab": {
+    "icon": "./icons/cyanclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cyanclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cyanclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cyanclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cyanclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cyanclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cyanclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cyanclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cyanclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cyanclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cyanclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.cyanclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.cyanclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brownclayslab": {
+    "icon": "./icons/brownclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brownclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brownclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brownclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brownclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brownclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brownclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brownclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brownclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brownclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brownclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.brownclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.brownclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blueclayslab": {
+    "icon": "./icons/blueclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blueclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blueclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blueclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blueclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blueclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blueclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blueclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackclayslab": {
+    "icon": "./icons/blackclayslab.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true
+    },
+    "categories": [
+      "decorative",
+      "clay"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackclayslableft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackclayslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackclayslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackclayslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackclayslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.blackclayslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.blackclayslab",
+    "sideall": "SELF",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lava": {
+    "color": "#ba2203",
+    "customData": {
+      "torches": {
+        "a": {
+          "color": "#ba2203",
+          "intensity": 12.5,
+          "range": 16,
+          "volume": 0.5
+        }
+      }
+    },
+    "icon": "./icons/lavaIcon.png",
+    "maxStackSize": 600,
+    "onPlaceAudio": "waterSplashFeet",
+    "onRemoveAudio": "waterSplashFeet",
+    "sideall": "SELF",
+    "categories": [
+      "decorative",
+      "water"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lavaslab": {
+    "color": "#ba2203",
+    "icon": "./icons/lavaslab.png",
+    "onPlaceAudio": "waterSplashFeet",
+    "onRemoveAudio": "waterSplashFeet",
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0,
+            0.5
+          ]
+        }
+      ]
+    },
+    "customData": {
+      "useNormalMap": true,
+      "useHeightMap": true,
+      "useEmissiveMap": true,
+      "torches": {
+        "a": {
+          "color": "#ba2203",
+          "intensity": 12.5,
+          "range": 16,
+          "volume": 0.5
+        }
+      }
+    },
+    "categories": [
+      "decorative",
+      "water"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lavaleft": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lavaslab",
+    "mesh": "./Meshes/slableft.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ 0, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lavaslabright": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lavaslab",
+    "mesh": "./Meshes/slabright.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lavaslabfront": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lavaslab",
+    "mesh": "./Meshes/slabfront.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, -0.5 ],
+          "max": [ 0.5, 0.5, 0 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lavaslabback": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lavaslab",
+    "mesh": "./Meshes/slabback.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [ -0.5, -0.5, 0 ],
+          "max": [ 0.5, 0.5, 0.5 ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lavaslabbottom": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lavaslab",
+    "mesh": "./Meshes/slabbottom.obj"
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.lavaslabtop": {
+    "parentType": "Pandaros.SchematicBuilder.AutoLoad.lavaslab",
+    "mesh": "./Meshes/slabtop.obj",
+    "colliders": {
+      "boxes": [
+        {
+          "min": [
+            -0.5,
+            0,
+            -0.5
+          ],
+          "max": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    }
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.infiniteAdamantine": {
+    "icon": "./icons/infiniteAdamantine.png",
+    "onPlaceAudio": "stonePlace",
+    "onRemoveAudio": "stoneDelete",
+    "destructionTime": 20000,
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "isDestructible": true,
+    "customData": {
+      "minerIsMineable": true,
+      "minerMiningTime": 20
+    },
+    "onRemove": [
+      {
+        "amount": 1,
+        "chance": 1,
+        "type": "Pandaros.SchematicBuilder.AutoLoad.AdamantineNugget"
+      },
+      {
+        "amount": 1,
+        "chance": 0.01,
+        "type": "Pandaros.SchematicBuilder.AutoLoad.Adamantine"
+      }
+    ],
+    "categories": [
+      "ore"
+    ]
+  },
+  "Pandaros.SchematicBuilder.AutoLoad.AdamantineNugget": {
+    "icon": "./icons/AdamantineNugget.png",
+    "maxStackSize": 600,
+    "isPlaceable": false,
+    "categories": [
+      "ingredient",
+      "raw"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetbrown": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetbrown.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetblack": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetblack.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetcyan": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetcyan.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetgreen": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetgreen.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetgrey": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetgrey.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetlightblue": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetlightblue.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetlime": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetlime.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetmagenta": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetmagenta.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetorange": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetorange.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetpink": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetpink.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  },
+  "Pandaros.SchematicBuilder.carpetpurple": {
+    "sideall": "SELF",
+    "npcLimit": 0,
+    "maxStackSize": 600,
+    "icon": "./icons/carpetpurple.png",
+    "onPlaceAudio": "dirtPlace",
+    "onRemoveAudio": "grassDelete",
+    "categories": [
+      "decorative",
+      "carpet"
+    ]
+  }
+}

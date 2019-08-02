@@ -1,0 +1,27 @@
+{
+  "types": {
+    "Pandaros.SchematicBuilder.SchematicTool": "Schematic Tool"
+  },
+  "typeuses": {
+    "Pandaros.SchematicBuilder.SchematicTool": "To use: place it on your toolbar and right click. This will bring up a menu that can create builder areas that can build and save schematics."
+  },
+  "sentences": {
+    "Pandaros": {
+      "SchematicBuilder": {
+        "SchematicTool1": {
+          "name": "Schematic Tool",
+          "description": "Adds a schematic tool that allows you to save your builds!"
+        }
+      }
+    },
+    "popup": {
+      "limits": {
+        "Pandaros": {
+          "SchematicBuilder": {
+
+          }
+        }
+      }
+    }
+  }
+}

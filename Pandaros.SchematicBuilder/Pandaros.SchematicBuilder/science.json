@@ -1,0 +1,50 @@
+[
+  {
+    "dependencies": [
+      "Pandaros.SchematicBuilder.Sorcerer1"
+    ],
+    "icon": "./icons/SkillEquiptmentResearch1.png",
+    "iterationCount": 200,
+    "iterationRequirements": [
+      { "type": "Pandaros.SchematicBuilder.AutoLoad.Adamantine" },
+      { "type": "Pandaros.SchematicBuilder.AirStone" },
+      { "type": "Pandaros.SchematicBuilder.EarthStone" },
+      { "type": "Pandaros.SchematicBuilder.WaterStone" },
+      { "type": "Pandaros.SchematicBuilder.FireStone" }
+    ],
+    "key": "Pandaros.SchematicBuilder.SkillEquiptmentResearch1",
+    "unlocksRecipes": [
+      "Pandaros.SchematicBuilder.SkilledBoots1",
+      "Pandaros.SchematicBuilder.SkilledChest1",
+      "Pandaros.SchematicBuilder.SkilledGloves1",
+      "Pandaros.SchematicBuilder.SkilledHelm1",
+      "Pandaros.SchematicBuilder.SkilledLegs1",
+      "Pandaros.SchematicBuilder.SkilledShield1",
+      "Pandaros.SchematicBuilder.SkilledSword1"
+    ]
+  },
+  {
+    "dependencies": [
+      "Pandaros.SchematicBuilder.SkillEquiptmentResearch1"
+    ],
+    "icon": "./icons/SkillEquiptmentResearch2.png",
+    "iterationCount": 300,
+    "iterationRequirements": [
+      { "type": "Pandaros.SchematicBuilder.AutoLoad.Adamantine" },
+      { "type": "Pandaros.SchematicBuilder.AirStone" },
+      { "type": "Pandaros.SchematicBuilder.EarthStone" },
+      { "type": "Pandaros.SchematicBuilder.WaterStone" },
+      { "type": "Pandaros.SchematicBuilder.FireStone" }
+    ],
+    "key": "Pandaros.SchematicBuilder.SkillEquiptmentResearch2",
+    "unlocksRecipes": [
+      "Pandaros.SchematicBuilder.SkilledBoots2",
+      "Pandaros.SchematicBuilder.SkilledChest2",
+      "Pandaros.SchematicBuilder.SkilledGloves2",
+      "Pandaros.SchematicBuilder.SkilledHelm2",
+      "Pandaros.SchematicBuilder.SkilledLegs2",
+      "Pandaros.SchematicBuilder.SkilledShield2",
+      "Pandaros.SchematicBuilder.SkilledSword2"
+    ]
+  }
+]
