@@ -3,11 +3,11 @@
     "dllpath": "Pandaros.SchematicBuilder.dll",
     "name": "Pandaros.SchematicBuilder",
     "namepretty": "Pandaros' SchematicBuilder!",
-    "version": "0.0.1.0",
+    "version": "0.1.1.0",
     "enabled": true,
     "marksgamemodded": true,
     "compatibleversions": [
-      "0.7.0"
+      "0.7.1"
     ],
     "jsonFiles": [
       {
@@ -24,6 +24,12 @@
     "website": "https://github.com/JBurlison/Pandaros.SchematicBuilder/",
     "about": "The SchematicBuilder mod allows you to copy and make your own schematic builds!",
     "patchnotes": [
+      {
+        "version": "0.1.1.0",
+        "notes": [
+          "Updated for Steam Workshop"
+        ]
+      },
       {
         "version": "0.1.0.0",
         "notes": [
