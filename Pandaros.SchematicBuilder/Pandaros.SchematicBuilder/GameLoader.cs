@@ -15,17 +15,16 @@ namespace Pandaros.SchematicBuilder
         public const string NAMESPACE = "Pandaros.SchematicBuilder";
         public const string SETTLER_INV = "Pandaros.SchematicBuilder.Inventory";
         public const string ALL_SKILLS = "Pandaros.SchematicBuilder.ALLSKILLS";
-        public static string MESH_PATH = "gamedata/mods/Pandaros/SchematicBuilder/Meshes/";
-        public static string AUDIO_PATH = "gamedata/mods/Pandaros/SchematicBuilder/Audio/";
-        public static string ICON_PATH = "gamedata/mods/Pandaros/SchematicBuilder/icons/";
+        public static string MESH_PATH = "Meshes/";
+        public static string AUDIO_PATH = "Audio/";
+        public static string ICON_PATH = "icons/";
         public static string BLOCKS_ALBEDO_PATH = "Textures/albedo/";
         public static string BLOCKS_EMISSIVE_PATH = "Textures/emissive/";
         public static string BLOCKS_HEIGHT_PATH = "Textures/height/";
         public static string BLOCKS_NORMAL_PATH = "Textures/normal/";
-        public static string BLOCKS_NPC_PATH = "gamedata/mods/Pandaros/SchematicBuilder/Textures/npc/";
+        public static string BLOCKS_NPC_PATH = "Textures/npc/";
         public static string TEXTURE_FOLDER_PANDA = "Textures";
-        public static string NPC_PATH = "gamedata/textures/materials/npc/";
-        public static string MOD_FOLDER = @"gamedata/mods/Pandaros/SchematicBuilder";
+        public static string MOD_FOLDER = @"";
         public static string MODS_FOLDER = @"";
         public static string GAMEDATA_FOLDER = @"";
         public static string GAME_ROOT = @"";
@@ -33,7 +32,7 @@ namespace Pandaros.SchematicBuilder
         public static string MACHINE_JSON = "";
         public static string Schematic_SAVE_LOC = "";
         public static string Schematic_DEFAULT_LOC = "";
-        public static readonly Version MOD_VER = new Version(0, 0, 1, 0);
+        public static readonly Version MOD_VER = new Version(0, 0, 1, 2);
         public static bool RUNNING { get; private set; }
         public static bool WorldLoaded { get; private set; }
         public static Colony StubColony { get; private set; }
@@ -56,18 +55,16 @@ namespace Pandaros.SchematicBuilder
         [ModLoader.ModCallback(ModLoader.EModCallbackType.OnAssemblyLoaded, NAMESPACE + ".OnAssemblyLoaded")]
         public static void OnAssemblyLoaded(string path)
         {
-            MOD_FOLDER = Path.GetDirectoryName(path);
+            MOD_FOLDER = Path.GetDirectoryName(path).Replace("\\", "/");
             Schematic_DEFAULT_LOC = $"{MOD_FOLDER}/Schematics/";
 
             if (!Directory.Exists(Schematic_DEFAULT_LOC))
                 Directory.CreateDirectory(Schematic_DEFAULT_LOC);
 
-            SchematicBuilderLogger.Log("Found mod in {0}", MOD_FOLDER);
+            GAME_ROOT = Path.GetDirectoryName(Assembly.GetCallingAssembly().Location) + @"/../../";
+            GAMEDATA_FOLDER = Path.Combine(GAME_ROOT, "gamedata").Replace("\\", "/") + "/";
+            MODS_FOLDER = MOD_FOLDER + @"/../../";
 
-            GAME_ROOT = path.Substring(0, path.IndexOf("gamedata")).Replace("/", "/");
-            GAMEDATA_FOLDER = path.Substring(0, path.IndexOf("gamedata") + "gamedata".Length).Replace("/", "/") + "/";
-
-            MODS_FOLDER = GAMEDATA_FOLDER + "mods/";
             ICON_PATH = Path.Combine(MOD_FOLDER, "icons").Replace("\\", "/") + "/";
             MESH_PATH = Path.Combine(MOD_FOLDER, "Meshes").Replace("\\", "/") + "/";
             AUDIO_PATH = Path.Combine(MOD_FOLDER, "Audio").Replace("\\", "/") + "/";
@@ -77,6 +74,13 @@ namespace Pandaros.SchematicBuilder
             BLOCKS_HEIGHT_PATH = Path.Combine(TEXTURE_FOLDER_PANDA, "height").Replace("\\", "/") + "/";
             BLOCKS_NORMAL_PATH = Path.Combine(TEXTURE_FOLDER_PANDA, "normal").Replace("\\", "/") + "/";
             BLOCKS_NPC_PATH = Path.Combine(TEXTURE_FOLDER_PANDA, "npc").Replace("\\", "/") + "/";
+
+            ModInfo = JSON.Deserialize(MOD_FOLDER + "/modInfo.json")[0];
+
+            SchematicBuilderLogger.Log("Found mod in {0}", MOD_FOLDER);
+            SchematicBuilderLogger.Log("GAME_ROOT in {0}", GAME_ROOT);
+            SchematicBuilderLogger.Log("GAMEDATA_FOLDER in {0}", GAMEDATA_FOLDER);
+            SchematicBuilderLogger.Log("MODS_FOLDER in {0}", MODS_FOLDER);
 
             ModInfo = JSON.Deserialize(MOD_FOLDER + "/modInfo.json")[0];
         }
