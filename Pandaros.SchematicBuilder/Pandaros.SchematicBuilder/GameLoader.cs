@@ -32,7 +32,7 @@ namespace Pandaros.SchematicBuilder
         public static string MACHINE_JSON = "";
         public static string Schematic_SAVE_LOC = "";
         public static string Schematic_DEFAULT_LOC = "";
-        public static readonly Version MOD_VER = new Version(0, 0, 1, 2);
+        public static readonly Version MOD_VER = new Version(0, 1, 2, 1);
         public static bool RUNNING { get; private set; }
         public static bool WorldLoaded { get; private set; }
         public static Colony StubColony { get; private set; }

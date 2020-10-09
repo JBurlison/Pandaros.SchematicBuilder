@@ -95,6 +95,13 @@ namespace Pandaros.SchematicBuilder.Jobs.Construction
             }
         };
 
+        public Dictionary<int, List<(string, RecipeUnlockClient.EType)>> AdditionalUnlocks => new Dictionary<int, List<(string, RecipeUnlockClient.EType)>>();
+
+        public void BeforeRegister()
+        {
+            
+        }
+
         public void OnRegister()
         {
 
@@ -130,6 +137,8 @@ namespace Pandaros.SchematicBuilder.Jobs.Construction
         public string Job => ColonyBuiltIn.NpcTypes.CRAFTER;
 
         public string name => GameLoader.NAMESPACE + ".SchematicTool";
+
+        public List<string> JobBlock => new List<string>();
     }
 
     [ModLoader.ModManager]
@@ -263,10 +272,10 @@ namespace Pandaros.SchematicBuilder.Jobs.Construction
                         if (File.Exists(metaDataSave))
                             File.Delete(metaDataSave);
 
-                        AreaJobTracker.StartCommandToolSelection(data.Player, new CommandToolTypeData()
+                        AreaJobTracker.StartCommandToolSelection(data.Player, new NetworkUI.AreaJobs.GenericCommandToolSettings()
                         {
-                            AreaType = "pipliz.constructionarea",
-                            LocaleEntry = _localizationHelper.LocalizeOrDefault("Architect", data.Player),
+                            Key = "pipliz.constructionarea",
+                            TranslationKey = _localizationHelper.LocalizeOrDefault("Architect", data.Player),
                             JSONData = new JSONNode().SetAs(ArchitectLoader.NAME + ".ArchitectSchematicName", schematicName).SetAs("constructionType", GameLoader.NAMESPACE + ".Architect"),
                             OneAreaOnly = true,
                             Maximum3DBlockCount = int.MaxValue,
